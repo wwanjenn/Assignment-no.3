@@ -18,6 +18,9 @@ def formulaTotalapple(totalCash1,costApple1):
 def formulaTotalchange(totalCash2,costApple2):
     _totalChange = totalCash2 % costApple2
     return _totalChange
+
+def display(totalAppleD,totalChangeD):
+    print(f'You can buy {totalAppleD} apples and your change is {totalChangeD} pesos.')
 # Steps
 #1 Input amount of money
 totalCash = totalAmount()
@@ -28,3 +31,4 @@ totalApple = formulaTotalapple(totalCash,costApple)
 #4 Formula for Change
 totalChange = formulaTotalchange(totalCash,costApple)
 #5 Display
+display(totalApple,totalChange)
