@@ -4,11 +4,11 @@
 # The total amount is ______.
 
 def amountApples():
-    _amountApples = input("How many apples do you want to buy?: ")
+    _amountApples = int(input("How many apples do you want to buy?: "))
     return _amountApples
 
 def amountOranges():
-    _amountOranges = input(" How many oranges do you want to buy?: ")
+    _amountOranges = int(input(" How many oranges do you want to buy?: "))
     return _amountOranges
     
 def priceFormula(amountApples,amountOranges):
