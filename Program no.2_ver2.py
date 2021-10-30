@@ -3,18 +3,23 @@
 # Display the output in the following format.
 # The total amount is ______.
 
-def applesAmount():
-    _applesAmount = input("How many apples do you want to buy?: ")
-    return _applesAmount
+def amountApples():
+    _amountApples = input("How many apples do you want to buy?: ")
+    return _amountApples
 
-def orangesAmount():
-    _orangesAmount = input(" How many oranges do you want to buy?: ")
-    return _orangesAmount
+def amountOranges():
+    _amountOranges = input(" How many oranges do you want to buy?: ")
+    return _amountOranges
     
+def priceFormula(amountApples,amountOranges):
+    _priceFormula = amountApples * 20 + amountOranges * 25
+    return _priceFormula
+
 # Steps
 # Ask how many apples you want to buy?
-applesAmount()
+amountApples1 = amountApples()
 # Ask how many oranges you want to buy?
-orangesAmount()
+amountOranges1 = amountOranges()
 # Insert Formula for Computation
+priceFormula(amountApples1,amountOranges1)
 # Display
