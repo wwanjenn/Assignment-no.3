@@ -15,11 +15,15 @@ def priceFormula(amountApples,amountOranges):
     _priceFormula = amountApples * 20 + amountOranges * 25
     return _priceFormula
 
+def display(totalPrice):
+    print(f'The total amount is {totalPrice}.')
+
 # Steps
 # Ask how many apples you want to buy?
 amountApples1 = amountApples()
 # Ask how many oranges you want to buy?
 amountOranges1 = amountOranges()
 # Insert Formula for Computation
-priceFormula(amountApples1,amountOranges1)
+totalPrice1 = priceFormula(amountApples1,amountOranges1)
 # Display
+display(totalPrice1)
