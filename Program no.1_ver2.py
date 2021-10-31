@@ -6,6 +6,9 @@ def insert(sample):
     _store = input(f'{sample}: ')
     return _store
 
+def display(nameD,ageD,addressD):
+    print(f'Hi, my name is {nameD}. I am {ageD} years old and I live in {addressD}.')
+
 # Steps
 #1 Input name
 name = insert('Name')
@@ -14,6 +17,11 @@ age = insert('Age')
 #3 Input address
 address = insert('Address')
 #4 Display
+display(name,age,address)
+
+
+
+
 
 
 
